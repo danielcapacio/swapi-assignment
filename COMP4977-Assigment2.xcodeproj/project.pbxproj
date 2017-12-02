@@ -13,6 +13,7 @@
 		063CFD051FD2051800B0327E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063CFD031FD2051800B0327E /* Main.storyboard */; };
 		063CFD071FD2051800B0327E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063CFD061FD2051800B0327E /* Assets.xcassets */; };
 		063CFD0A1FD2051800B0327E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063CFD081FD2051800B0327E /* LaunchScreen.storyboard */; };
+		0AF9D3908F05B692B6473EBD /* Pods_COMP4977_Assigment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F39DB59FA4FD13A39F762D6 /* Pods_COMP4977_Assigment2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		063CFD061FD2051800B0327E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		063CFD091FD2051800B0327E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		063CFD0B1FD2051800B0327E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F39DB59FA4FD13A39F762D6 /* Pods_COMP4977_Assigment2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COMP4977_Assigment2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74FAD63A700CB934CD883B7F /* Pods-COMP4977-Assigment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COMP4977-Assigment2.release.xcconfig"; path = "Pods/Target Support Files/Pods-COMP4977-Assigment2/Pods-COMP4977-Assigment2.release.xcconfig"; sourceTree = "<group>"; };
+		99D0F0B60D1ECA37B80D94F3 /* Pods-COMP4977-Assigment2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COMP4977-Assigment2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-COMP4977-Assigment2/Pods-COMP4977-Assigment2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF9D3908F05B692B6473EBD /* Pods_COMP4977_Assigment2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				063CFCFC1FD2051800B0327E /* COMP4977-Assigment2 */,
 				063CFCFB1FD2051800B0327E /* Products */,
+				EEB8741BAD44F8B665466D90 /* Pods */,
+				78736BF4B4F9FC755728E024 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "COMP4977-Assigment2";
 			sourceTree = "<group>";
 		};
+		78736BF4B4F9FC755728E024 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F39DB59FA4FD13A39F762D6 /* Pods_COMP4977_Assigment2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEB8741BAD44F8B665466D90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99D0F0B60D1ECA37B80D94F3 /* Pods-COMP4977-Assigment2.debug.xcconfig */,
+				74FAD63A700CB934CD883B7F /* Pods-COMP4977-Assigment2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 063CFD0E1FD2051800B0327E /* Build configuration list for PBXNativeTarget "COMP4977-Assigment2" */;
 			buildPhases = (
+				0AF232718D0FE58AB190EADA /* [CP] Check Pods Manifest.lock */,
 				063CFCF61FD2051800B0327E /* Sources */,
 				063CFCF71FD2051800B0327E /* Frameworks */,
 				063CFCF81FD2051800B0327E /* Resources */,
+				B3B95B9BACAA9E1EF74B68A7 /* [CP] Embed Pods Frameworks */,
+				877139398E925471D48C3D91 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AF232718D0FE58AB190EADA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-COMP4977-Assigment2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		877139398E925471D48C3D91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-COMP4977-Assigment2/Pods-COMP4977-Assigment2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3B95B9BACAA9E1EF74B68A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-COMP4977-Assigment2/Pods-COMP4977-Assigment2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-COMP4977-Assigment2/Pods-COMP4977-Assigment2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		063CFCF61FD2051800B0327E /* Sources */ = {
@@ -276,6 +361,7 @@
 		};
 		063CFD0F1FD2051800B0327E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D0F0B60D1ECA37B80D94F3 /* Pods-COMP4977-Assigment2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +377,7 @@
 		};
 		063CFD101FD2051800B0327E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74FAD63A700CB934CD883B7F /* Pods-COMP4977-Assigment2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
